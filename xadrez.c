@@ -17,31 +17,40 @@ int main() {
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
-    int casaBispo = 5; //5 casas na diagonal
-    int casaTorre = 5; //5 casas para direita
-    int casaRainha = 8; // 8 casas para esquerda
+    int casaBispo = 1; //5 casas na diagonal
+    int casaTorre = 1; //5 casas para direita
+    int casaRainha = 1; // 8 casas para esquerda
 
     while (casaBispo <= 5){
-      printf("O BISPO andou %d casas na DIAGONAL\n", casaBispo);
+      printf("%d - Cima, Direita\n", casaBispo);
       casaBispo++;
     }
 
     while(casaTorre <= 5){
-      printf("A TORRE andou %d casas para DIREITA\n", casaTorre);
+      printf("%d - Direta\n", casaTorre);
       casaTorre++;
     }
 
-    for (casaRainha = 8; casaRainha <= 8; casaRainha++){
-      printf("A RAINHA andou %d casas para ESQUERDA\n", casaRainha);
+    for (casaRainha = 1; casaRainha <= 8; casaRainha++){
+      printf("%d - Esquerda\n", casaRainha);
     }
     
 
-
-    
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    int casaCavaloX = 2;//2 casas para baixo
+    int casaCavaloY = 1;// 1 casa para esquerda
+
+    for (int casaCavaloY = 1; casaCavaloY <= 1; casaCavaloY++){
+      for (int casaCavaloX = 1; casaCavaloX <= 2; casaCavaloX++){
+        printf("%d - Baixo\n", casaCavaloX);
+      }
+      printf("%d - Esquerda\n", casaCavaloY);
+    }
+    
+
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
