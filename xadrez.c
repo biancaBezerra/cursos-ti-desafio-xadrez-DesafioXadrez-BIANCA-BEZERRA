@@ -19,7 +19,7 @@ int main() {
 
     int casaBispo = 1; //5 casas na diagonal
     int casaTorre = 1; //5 casas para direita
-    int casaRainha = 1; // 8 casas para esquerda
+    int casaRainha; // 8 casas para esquerda
 
     while (casaBispo <= 5){
       printf("%d - Cima, Direita\n", casaBispo);
@@ -40,8 +40,8 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
-    int casaCavaloX = 2;//2 casas para baixo
-    int casaCavaloY = 1;// 1 casa para esquerda
+    int casaCavaloX;//2 casas para baixo
+    int casaCavaloY;// 1 casa para esquerda
 
     for (int casaCavaloY = 1; casaCavaloY <= 1; casaCavaloY++){
       for (int casaCavaloX = 1; casaCavaloX <= 2; casaCavaloX++){
